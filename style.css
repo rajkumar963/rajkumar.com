@@ -34,6 +34,9 @@ body{
     align-items: center;
     z-index: 100;
 }
+.header sticky{
+    border-bottom:.1rem solid rgba(0,0,0,.2);
+}
 #menu{
     font-size: 3.3rem;
     color: var(--text-color);
@@ -65,9 +68,8 @@ body{
 .home{
     position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     justify-content: space-between;
-    /* background: url("D:\raj.jpg" ) no-repeat; */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -214,8 +216,8 @@ body{
 .skill{
    padding: 62px;
    margin: 90px; 
-   height: 80vh;
-}
+   /* height: 80vh;*/
+} 
 .skill h2{
     margin-bottom: 5rem;
 
@@ -387,4 +389,77 @@ body{
 .footer-iconTop a i{
     font-size: 2.4rem;
     color: var(--bg-color);
+}
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+@media(max-width:716px){
+    #menu{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2.3rem;
+        margin: 3rem 0;
+        color: var(--text-color);
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-imag1 img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about img{
+        width: 50vw;
+        margin-top: 4rem;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
