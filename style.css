@@ -135,17 +135,19 @@ body{
     box-shadow: 0 0 20px #0ef;
 }
 .imag1  img{
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     opacity: .5;
     border-radius: 50%;
-    border: 2px solid #0ef;
+    border: 2px solid rgb(16, 17, 17);
 }
 .imag1 img:hover{
     background: #0ef;
     color: var(--bg-color);
+    border:2px solid #0ef;
     box-shadow: 0 0 20px #0ef;
+    transform: scale(1.05);
 }
 
 .about{
@@ -158,8 +160,8 @@ body{
     background: var(--second-bg-color);  
 }
 .imag2 img{
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     opacity: .5;
     border-radius: 50%;
@@ -171,6 +173,7 @@ body{
     background: #0ef;
     color: var(--bg-color);
     box-shadow: 0 0 20px #0ef;
+    transform: scale(1.05);
 
 }
 .content{
